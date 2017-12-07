@@ -429,7 +429,7 @@ public class CrimeFragment extends Fragment {
                 : getString(R.string.crime_report_no_requires_police);
 
         String dateFormat = "EEE, MMM dd";
-        String dateString = new SimpleDateFormat(dateFormat, Locale.US)
+        String dateString = new SimpleDateFormat(dateFormat, Locale.getDefault())
                 .format(mCrime.getDate());
 
         String displayName;
