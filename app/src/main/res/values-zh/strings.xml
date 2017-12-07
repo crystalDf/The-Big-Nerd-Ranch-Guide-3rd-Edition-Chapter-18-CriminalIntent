@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">疑案追踪</string>
+
+    <string name="crime_title_hint">疑案简短描述</string>
+    <string name="crime_title_label">标题</string>
+    <string name="crime_details_label">明细</string>
+    <string name="crime_solved_label">是否解决</string>
+    <string name="contact_police">联系警方</string>
+    <string name="crime_solved_image_view">疑案解决示意图</string>
+    <string name="crime_requires_police_label">是否需警方介入</string>
+    <string name="jump_to_first">第一项</string>
+    <string name="jump_to_last">最后一项</string>
+    <string name="date_picker_title">疑案发生日期:</string>
+    <string name="time_picker_title">疑案发生时间:</string>
+    <string name="ok">确定</string>
+    <string name="new_crime">新增疑案记录</string>
+    <string name="show_subtitle">显示子标题</string>
+    <string name="subtitle_singular_format">1项疑案</string>
+    <string name="subtitle_plural_format">%1$d项疑案</string>
+    <string name="hide_subtitle">隐藏子标题</string>
+    <string name="delete_crime">删除疑案记录</string>
+    <string name="no_crimes">没有疑案</string>
+
+    <string name="crime_suspect_text">嫌疑人联系方式</string>
+    <string name="crime_report_text">抗议或投诉</string>
+    <string name="crime_report">%1$s！疑案发生于%2$s。%3$s，%4$s，%5$s。</string>
+    <string name="crime_report_solved">问题已解决</string>
+    <string name="crime_report_unsolved">问题未解决</string>
+    <string name="crime_report_requires_police">需要警方介入</string>
+    <string name="crime_report_no_requires_police">不需要警方介入</string>
+    <string name="crime_report_no_suspect">没找到嫌疑人</string>
+    <string name="crime_report_suspect">嫌疑人是%s</string>
+    <string name="crime_report_subject">疑案处理情况报告</string>
+    <string name="send_report">投诉方式</string>
+    <string name="crime_dial_text">呼叫嫌疑人</string>
+    <string name="detail_display_title">细节显示</string>
+
+    <string name="serious_crime_requires_police">需要警方介入</string>
+</resources>

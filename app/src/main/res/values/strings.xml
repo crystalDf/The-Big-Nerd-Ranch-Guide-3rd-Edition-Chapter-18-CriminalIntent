@@ -35,6 +35,8 @@
     <string name="crime_dial_text">Make a phone call</string>
     <string name="detail_display_title">Detail Display</string>
 
+    <string name="serious_crime_requires_police"> requires police!</string>
+
     <plurals name="subtitle_plural">
         <item quantity="one">%1$s crime</item>
         <item quantity="other">%1$s crimes</item>

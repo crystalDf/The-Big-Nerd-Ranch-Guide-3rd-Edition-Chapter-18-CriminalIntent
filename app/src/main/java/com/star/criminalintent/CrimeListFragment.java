@@ -182,7 +182,8 @@ public class CrimeListFragment extends Fragment {
             mRequiresPoliceButton = itemView.findViewById(R.id.list_item_crime_requires_police_button);
 
             mRequiresPoliceButton.setOnClickListener(v -> Toast.makeText(getActivity(),
-                    mCrime.getTitle() + " requires police!", Toast.LENGTH_LONG).show());
+                    mCrime.getTitle() + getResources().getString(R.string.serious_crime_requires_police),
+                    Toast.LENGTH_LONG).show());
         }
     }
 
