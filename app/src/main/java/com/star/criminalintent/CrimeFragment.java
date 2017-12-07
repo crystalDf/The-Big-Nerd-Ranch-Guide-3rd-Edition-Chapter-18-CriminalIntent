@@ -428,10 +428,7 @@ public class CrimeFragment extends Fragment {
                 ? getString(R.string.crime_report_requires_police)
                 : getString(R.string.crime_report_no_requires_police);
 
-        String dateFormat = "EEE, MMM d";
-        if (Locale.getDefault().equals(Locale.CHINA)) {
-            dateFormat = "EEE，MMMd日";
-        }
+        String dateFormat = getResources().getString(R.string.formatted_date_in_report);
         String dateString = new SimpleDateFormat(dateFormat, Locale.getDefault())
                 .format(mCrime.getDate());
 

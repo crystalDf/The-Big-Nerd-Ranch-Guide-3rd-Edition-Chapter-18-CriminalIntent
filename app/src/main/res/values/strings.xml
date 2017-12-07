@@ -37,6 +37,10 @@
 
     <string name="serious_crime_requires_police"> requires police!</string>
 
+    <string name="formatted_date">"EEEE, MMM d, yyyy"</string>
+    <string name="formatted_time">"HH:mm"</string>
+    <string name="formatted_date_in_report">"EEE, MMM d"</string>
+
     <plurals name="subtitle_plural">
         <item quantity="one">%1$s crime</item>
         <item quantity="other">%1$s crimes</item>
