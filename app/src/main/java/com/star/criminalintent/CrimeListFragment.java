@@ -160,7 +160,8 @@ public class CrimeListFragment extends Fragment {
         public void bindCrime(Crime crime) {
             mCrime = crime;
             mTitleTextView.setText(mCrime.getTitle());
-            mDateTextView.setText(mCrime.getFormattedDate());
+            String format = getResources().getString(R.string.formatted_date);
+            mDateTextView.setText(mCrime.getFormattedDate(format));
             mSolvedImageView.setVisibility(mCrime.isSolved() ? View.VISIBLE : View.GONE);
         }
     }

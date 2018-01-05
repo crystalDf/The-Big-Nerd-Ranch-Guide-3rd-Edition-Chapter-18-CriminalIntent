@@ -266,7 +266,8 @@ public class CrimeFragment extends Fragment {
     }
 
     private void updateUI() {
-        mDateButton.setText(mCrime.getFormattedDate());
+        String format = getResources().getString(R.string.formatted_date);
+        mDateButton.setText(mCrime.getFormattedDate(format));
         mTimeButton.setText(mCrime.getFormattedTime());
     }
 

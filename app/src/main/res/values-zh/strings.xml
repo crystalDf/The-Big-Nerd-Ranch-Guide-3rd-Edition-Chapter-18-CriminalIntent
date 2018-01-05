@@ -39,5 +39,5 @@
     <string name="serious_crime_requires_police">需要警方介入</string>
 
     <string name="formatted_date">"EEEE，MMMd日，yyyy"</string>
-    <string name="formatted_date_in_report">"EEE，MMMd日""</string>
+    <string name="formatted_date_in_report">"EEE，MMMd日"</string>
 </resources>
