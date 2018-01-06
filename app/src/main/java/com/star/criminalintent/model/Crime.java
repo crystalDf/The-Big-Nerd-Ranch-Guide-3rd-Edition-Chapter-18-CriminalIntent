@@ -74,13 +74,6 @@ public class Crime {
         return simpleDateFormat.format(mDate);
     }
 
-    public String getFormattedTime() {
-        String format = "HH:mm";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(format, Locale.getDefault());
-
-        return simpleDateFormat.format(mDate);
-    }
-
     public String getPhotoFileName() {
         return "IMG_" + getId().toString() + ".jpg";
     }

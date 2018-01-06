@@ -36,10 +36,8 @@ import com.star.criminalintent.model.Crime;
 import com.star.criminalintent.model.Suspect;
 
 import java.io.File;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 import java.util.UUID;
 
 public class CrimeFragment extends Fragment {
@@ -266,9 +264,10 @@ public class CrimeFragment extends Fragment {
     }
 
     private void updateUI() {
-        String format = getResources().getString(R.string.formatted_date);
-        mDateButton.setText(mCrime.getFormattedDate(format));
-        mTimeButton.setText(mCrime.getFormattedTime());
+        mDateButton.setText(mCrime.getFormattedDate(
+                getResources().getString(R.string.formatted_date)));
+        mTimeButton.setText(mCrime.getFormattedDate(
+                getResources().getString(R.string.formatted_time)));
     }
 
     @Override
@@ -429,9 +428,8 @@ public class CrimeFragment extends Fragment {
                 ? getString(R.string.crime_report_requires_police)
                 : getString(R.string.crime_report_no_requires_police);
 
-        String dateFormat = getResources().getString(R.string.formatted_date_in_report);
-        String dateString = new SimpleDateFormat(dateFormat, Locale.getDefault())
-                .format(mCrime.getDate());
+        String dateString = mCrime.getFormattedDate(
+                getResources().getString(R.string.formatted_date_in_report));
 
         String displayName;
         if (mCrime.getSuspect() == null ||
