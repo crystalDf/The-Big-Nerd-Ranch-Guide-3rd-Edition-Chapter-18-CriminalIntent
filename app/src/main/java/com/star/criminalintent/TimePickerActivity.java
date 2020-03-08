@@ -3,9 +3,10 @@ package com.star.criminalintent;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.app.Fragment;
 
 import java.util.Date;
+
+import androidx.fragment.app.Fragment;
 
 public class TimePickerActivity extends SingleFragmentActivity {
 

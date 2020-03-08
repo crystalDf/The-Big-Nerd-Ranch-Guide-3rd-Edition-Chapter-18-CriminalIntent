@@ -13,10 +13,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.ShareCompat;
-import android.support.v4.content.FileProvider;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -39,6 +35,11 @@ import java.io.File;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
+
+import androidx.core.app.ShareCompat;
+import androidx.core.content.FileProvider;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 public class CrimeFragment extends Fragment {
 
@@ -130,7 +131,7 @@ public class CrimeFragment extends Fragment {
         mDateButton.setOnClickListener(v -> {
             if (getResources().getConfiguration().orientation
                     == Configuration.ORIENTATION_LANDSCAPE) {
-                FragmentManager fragmentManager = getFragmentManager();
+                FragmentManager fragmentManager = getParentFragmentManager();
                 DatePickerFragment datePickerFragment =
                         DatePickerFragment.newInstance(mCrime.getDate());
                 datePickerFragment.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
@@ -146,7 +147,7 @@ public class CrimeFragment extends Fragment {
         mTimeButton.setOnClickListener(v -> {
             if (getResources().getConfiguration().orientation
                     == Configuration.ORIENTATION_LANDSCAPE) {
-                FragmentManager fragmentManager = getFragmentManager();
+                FragmentManager fragmentManager = getParentFragmentManager();
                 TimePickerFragment timePickerFragment =
                         TimePickerFragment.newInstance(mCrime.getDate());
                 timePickerFragment.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
@@ -221,7 +222,7 @@ public class CrimeFragment extends Fragment {
                 });
 
         mPhotoView.setOnClickListener(v -> {
-            FragmentManager fragmentManager = getFragmentManager();
+            FragmentManager fragmentManager = getParentFragmentManager();
             DetailDisplayFragment detailDisplayFragment =
                     DetailDisplayFragment.newInstance(mPhotoFile.getPath());
             detailDisplayFragment.show(fragmentManager, DIALOG_DETAIL_DISPLAY);
